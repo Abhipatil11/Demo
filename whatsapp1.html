@@ -1,0 +1,301 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css" />
+    <style>
+        .register .nav-tabs .nav-link:hover {
+            border: none;
+        }
+
+        .text-align {
+            margin-top: -3%;
+            margin-bottom: -9%;
+
+            padding: 10%;
+            margin-left: 30%;
+        }
+
+        .form-new {
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+
+        .register-heading {
+            margin-left: 15%;
+            margin-bottom: 10%;
+            color: #e9ecef;
+        }
+
+        .register-heading h1 {
+            margin-left: 20%;
+            margin-bottom: 7%;
+            color: #e9ecef;
+        }
+
+        .register {
+            background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
+            margin-top: 3%;
+            padding: 3%;
+            border-radius: 2.5rem;
+        }
+
+        .btnSubmit {
+            width: 50%;
+            border-radius: 1rem;
+            padding: 1.5%;
+            color: #fff;
+            background-color: #03612e;
+            border: none;
+            cursor: pointer;
+            margin-right: 6%;
+            color: rgb(246, 246, 252);
+            margin-top: 4%;
+        }
+        .box{
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 17px;
+            text-align: center;
+            color: black;
+            background-color: white;
+        }
+        .tacbox {
+    display:block;
+    padding: 1em;
+    margin: 2em;
+    border: 2px solid #ddd;
+    background-color: #eee;
+    max-width: 600px;
+  }
+  
+  .tacbox input {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+  }
+@media (max-width:584px) {
+    .register{
+       max-width: 100%;
+    }
+    .box{
+        margin-bottom: 15px;
+        width: 85%;
+         right: 100%;
+    }
+    .text-align{
+        width: 80%;
+    }
+    .form-new {
+        width: 90%;
+        text-align: center;
+        margin-right: 100%;
+    }
+    .tacbox{
+        width: 70%;
+        height: 8%;
+    }
+   
+}
+    </style>
+</head>
+
+<body>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel"
+                    aria-labelledby="home-tab">
+                    <a href="./index.html" style="margin-left:-300px; font-size: 20px; border-radius:10px;
+                    color: black; background-color: white; border: 1px solid white;">Back</a>
+                    <h3 class="register-heading text-nowrap">Booking Form </h3>
+                    <div class="row register-form">
+                        <div class="col-md-12">
+                            <form autocomplete="off">
+                                <div class="form-group">
+                                    <input type="text" name="Name" id="name" class="form-control"
+                                        placeholder=" Name *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Email" id="email" class="form-control"
+                                        placeholder=" Email *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="Phone" id="phone" class="form-control"
+                                        placeholder=" Contact Number *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <span>Birthdate</span>
+                                    <input type="date" name="Birthdate" id="Birthdate" class="form-control"
+                                        placeholder=" Birthdate *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Address" id="Address" class="form-control"
+                                        placeholder="Local Address *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Address" id="Address1" class="form-control"
+                                        placeholder="Permanent Address *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="Profession" required="">
+                                        <option>Profession</option>
+                                        <option>Student</option>
+                                        <option>Employee</option>
+                                        <option>Business</option>
+                                        <option>Farmar</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="service1" required="">
+                                        <option>Car select</option>
+                                        <option value="1">Maruti Suzuki Swift(Petrol Or Diesel</option>
+                                        <option value="2">Maruti Suzuki Baleno (Petrol)</option>
+                                        <option value="3">Maruti Suzuki Wagonar (Pertol+CNG)</option>
+                                        <option value="4">Maruti Suzuki Brezza (Disel)</option>
+                                        <option value="5">Hyundai Venue (Disel with Sunroof)</option>
+                                        <option value="6">Mahindra XUV 300 (Disel with Sunroof)</option>
+                                        <option value="7">Hyudai Creta (Disel with Sunroof)</option>
+                                        <option value="8">Mahindra THAR 4x4 (Hardtop)</option>
+                                        <option value="9">Maruti Suzuki Ertiga (Disel or Pertol+CNG)</option>
+                                        <option value="10">Toyota Fortuner(Disel)</option>
+                                        <option value="11">Maruti Suzuki Swift Desire(Disel)</option>
+                                        <option value="12">Other</option>
+                                    </select>
+                                </div>
+                                Other:
+                                    <input type="text"  id="txtOther" disabled="disabled" />
+                                    
+                                <div class="form-group">
+                                    <span>Pick-Up Date & Time</span>
+                                    <input type="datetime-local" name="PickUp" id="PickUp" class="form-control"
+                                        placeholder="Pick-Up *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <span>Drop Date & Time</span>
+                                    <input type="datetime-local" name="Drop" id="Drop" class="form-control"
+                                        placeholder="Drop *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="KM" id="KM" class="form-control"
+                                        placeholder="Total KM Running *" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="Adharcard" required="">
+                                        <option>Adhar-card</option>
+                                        <option>Adhar card (Front & Back side)</option>
+                                    </select>
+                                </div>   
+                                <div class="form-group">
+                                    <select class="form-control" id="Pancard" required="">
+                                        <option>Pancard</option>
+                                        <option>Pancard</option>
+                                    </select>
+                                </div>  
+                                <div class="form-group">
+                                    <select class="form-control" id="Dlicence" required="">
+                                        <option>Drive Licence</option>
+                                        <option>Drive Licence<</option>
+                                    </select>
+                                </div> 
+                                <div class="form-group">
+                                    <select class="form-control" id="selfphoto" required="">
+                                        <option> Self Photo</option>
+                                        <option>Yes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="Signature" required="">
+                                        <option> Signature</option>
+                                        <option>Yes</option>
+                                    </select>
+                                </div>
+                                <div class="box">
+                                    <a href="https://forms.gle/HV8ASMuZPahDfmxb6"> Uploaded All Document  </a>
+                                </div>
+                                <div class="tacbox">
+                                    <input id="checkbox" type="checkbox"  required=""/>
+                                    <label for="checkbox"> <p><a href="./termcondition.html" target="_self" >Do you accept all terms & Conditions*</a>
+                                </div>
+                                <div class="form-group">
+                                    <input type="button" name="submit" class="btnSubmit btn-block" onclick="gotowhatsapp()" value="Submit" />
+                                  <!----- <div class="popup" id="popup">
+                                    <img src="./img/tick.png" alt="">
+                                    <h2>Thank You !</h2>
+                                    <p>Your details has been successfull submitted. Thanks.!</p>
+                                    <button type="button" onclick="closepopup()">OK</button>
+                                </div>-->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function gotowhatsapp() {
+
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var Birthdate = document.getElementById("Birthdate").value;
+            var Address= document.getElementById("Address").value;
+            var Address1= document.getElementById("Address1").value;
+            var Profession= document.getElementById("Profession").value;
+            var service1 = document.getElementById("service1").value;
+            var PickUp = document.getElementById("PickUp").value;
+            var Drop = document.getElementById("Drop").value;
+            var KM = document.getElementById("KM").value;
+            var Adharcard = document.getElementById("Adharcard").value;
+            var Pancard = document.getElementById("Pancard").value;
+            var Dlicence = document.getElementById("Dlicence").value;
+            var selfphoto = document.getElementById("selfphoto").value;
+            var Signature = document.getElementById("Signature").value;
+
+            var url = "https://wa.me/8275829980?text="
+                + "Name: " + name + "%0a"
+                + "Phone: " + phone + "%0a"
+                + "Email: " + email + "%0a"
+                + "Birthdate: " + Birthdate + "%0a"
+                + "Address: " + Address + "%0a"
+                + "Address1: " + Address1 + "%0a"
+                + "Profession: " + Profession + "%0a"
+                + "Service1: " + service1+ "%0a"
+                + "PickUp: " + PickUp+ "%0a"
+                + "Drop: " + Drop+ "%0a"
+                + "KM: " + KM+ "%0a"
+                + "Adharcard: " + Adharcard+ "%0a"
+                + "Pancard: " + Pancard+ "%0a"
+                + " Dlicence: " +  Dlicence+ "%0a"
+                + "selfphoto: " + selfphoto+ "%0a"
+                + "Signature: "+ Signature;
+
+            window.open(url, '_blank').focus();
+        }
+
+    </script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#service1").change(function () {
+                if ($(this).val() == 12) {
+                    $("#txtOther").removeAttr("disabled");
+                    $("#txtOther").focus();
+                } else {
+                    $("#txtOther").attr("disabled", "disabled");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

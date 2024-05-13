@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental Registration</title>
+<link rel="stylesheet" href="whatsapp.css">
+</head>
+<body>
+
+<h2>Booking Details</h2>
+
+<form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="Whatapp">Whatapp No.:</label>
+    <input type="text" id="Whatapp" name="Whatapp" required><br><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required><br><br>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required><br><br>
+
+    <label for="village">Village:</label>
+    <input type="text" id="village" name="village" required><br><br>
+
+    <label for="mobile">Mobile No.:</label>
+    <input type="tel" id="mobile" name="mobile" required><br><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea><br><br>
+
+    <label for="adharCard">Adhar Card No.:</label>
+    <input type="text" id="adharCard" name="adharCard" required><br><br>
+
+    <label for="carType">Car Type:</label>
+    <select id="carType" name="carType">
+        <option value="ToyotaInnova">Toyota Innova</option>
+        <option value="MarutiSuzukiErtiga">Maruti Suzuki Ertiga</option>
+        <option value="MarutiSuzukiCaiz">Maruti Suzuki Caiz</option>
+        <option value="MarutiSuzukiBrezza">Maruti Suzuki Brezza</option>
+        <option value="ToyotaEtios">Toyota Etios</option>
+    </select><br><br>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate" required><br><br>
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" name="endDate" required><br><br>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script src="whatsapp.js"></script>
+</body>
+</html>
+
